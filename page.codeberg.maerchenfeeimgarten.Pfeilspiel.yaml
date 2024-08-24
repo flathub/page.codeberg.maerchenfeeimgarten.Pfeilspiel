@@ -17,15 +17,15 @@ modules:
       - install -Dm 0644 page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml /app/share/metainfo/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
     sources:
       - type: file
-        sha256: 79c40f98189e4ffcf91f0390218e04aedd744be767d833ec5c7aabb64e7586c2
+        sha256: 1fa2e9b34c945c97415418c2a1638792fecc8dfac5e88a356e951ba62100dca4
         only-arches: [x86_64]
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/releases/download/v0.0.8/Pfeilspiel_TNG_international
+        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/releases/download/v0.0.9/Pfeilspiel_TNG_international
       - type: file
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/8710d52eb5d411110432cb3c6d3a4037eac00a33/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop
-        sha256: c82c80cea1fdc2d65473370db66fdddf513d0534022c282cc586b21549437a73
+        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/45a50760cc947c97a27cf75e63feff36423b4b31/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop
+        sha256: a78f3bff4e5e69274a032b40ab6a0acd55d086e3d47720e21967befd1716ae6b
       - type: file
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/59a72b6601689a37034c53bdc80c167b45ad7c7b/src/pfeiltng/Pfeilspiel_TNG.svg
-        sha256: 3a8294647fbf76f187e00034fa8a6dff24ed92d1f03d51f92b4ea95b1ac4a5bf
+        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/45a50760cc947c97a27cf75e63feff36423b4b31/src/pfeiltng/Pfeilspiel_TNG.svg
+        sha256: 463e70c71eab51ff7f53f619d21f1fce494068528156cf0afdde3efc729a48d7
       - type: file
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/64c713f0a244c0abc0f90ec83e1b1489c55fe2bf/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
-        sha256: b1fe0ab868274274a0ec9022c5e1997ba7953d285d574d0b92eafa01a8c37c7f
+        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/5d80e082c20d2fb99b286c18d7c3183a64a59a42/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
+        sha256: a9860e58fb96ddd2d40ba27cf23e3b755b096420599c8e744b9f888947370bc0
