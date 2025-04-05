@@ -1,6 +1,6 @@
 id: page.codeberg.maerchenfeeimgarten.Pfeilspiel
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: "Pfeilspiel_TNG_international"
 finish-args:
@@ -17,15 +17,15 @@ modules:
       - install -Dm 0644 page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml /app/share/metainfo/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
     sources:
       - type: file
-        sha256: 1fa2e9b34c945c97415418c2a1638792fecc8dfac5e88a356e951ba62100dca4
+        sha256: 09806476debbfee87b14230c286fb8790cf8767d6a715a10e5e1f0f951ce55e9
         only-arches: [x86_64]
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/releases/download/v0.0.9/Pfeilspiel_TNG_international
+        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/releases/download/v0.1.0/Pfeilspiel_TNG_international
       - type: file
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/45a50760cc947c97a27cf75e63feff36423b4b31/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop
+        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/a54b73708c69fc2c59cd0755d7f44878ad630273/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop
         sha256: a78f3bff4e5e69274a032b40ab6a0acd55d086e3d47720e21967befd1716ae6b
       - type: file
         url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/45a50760cc947c97a27cf75e63feff36423b4b31/src/pfeiltng/Pfeilspiel_TNG.svg
         sha256: 463e70c71eab51ff7f53f619d21f1fce494068528156cf0afdde3efc729a48d7
       - type: file
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/5d80e082c20d2fb99b286c18d7c3183a64a59a42/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
-        sha256: a9860e58fb96ddd2d40ba27cf23e3b755b096420599c8e744b9f888947370bc0
+        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/a54b73708c69fc2c59cd0755d7f44878ad630273/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
+        sha256: a8ee7c53b9ce4bd6f618ae398ea7c9146edcbb67d71c6df0353370f17c76c434
