@@ -1,31 +1,33 @@
-id: page.codeberg.maerchenfeeimgarten.Pfeilspiel
+id: page.codeberg.maerchenfeeimgarten.AntiBillard
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
-command: "Pfeilspiel_TNG_international"
+base: org.godotengine.godot.BaseApp
+base-version: '4.4'
+command: godot-runner
 finish-args:
   - --share=ipc
   - --socket=x11
+  - --socket=pulseaudio
   - --device=dri
 modules:
-  - name: Pfeilspiel_TNG_international
+  - name: AntiBillard
     buildsystem: simple
     build-commands:
-      - install -D  Pfeilspiel_TNG_international /app/bin/Pfeilspiel_TNG_international
-      - install -Dm 0644 page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop /app/share/applications//page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop
-      - install -Dm 0644 Pfeilspiel_TNG.svg /app/share/icons/hicolor/scalable/apps/page.codeberg.maerchenfeeimgarten.Pfeilspiel.svg
-      - install -Dm 0644 page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml /app/share/metainfo/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
+      - install -D  AntiBillard_Godot.pck /app/bin/godot-runner.pck
+      - install -Dm 0644 page.codeberg.maerchenfeeimgarten.AntiBillard.desktop /app/share/applications/page.codeberg.maerchenfeeimgarten.AntiBillard.desktop
+      - install -Dm 0644 Splash_Square.svg /app/share/icons/hicolor/scalable/apps/page.codeberg.maerchenfeeimgarten.AntiBillard.svg
+      - install -Dm 0644 page.codeberg.maerchenfeeimgarten.AntiBillard.metainfo.xml /app/share/metainfo/page.codeberg.maerchenfeeimgarten.AntiBillard.metainfo.xml
     sources:
       - type: file
-        sha256: 09806476debbfee87b14230c286fb8790cf8767d6a715a10e5e1f0f951ce55e9
-        only-arches: [x86_64]
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/releases/download/v0.1.0/Pfeilspiel_TNG_international
+        sha256: d13800111304f517274d543427311d51e4b8b2266b6f5d31bf4f309f49d6623f
+        url: https://codeberg.org/MaerchenfeeimGarten/AntiBillard/releases/download/v0.0.7/AntiBillard_Godot.pck
       - type: file
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/a54b73708c69fc2c59cd0755d7f44878ad630273/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop
-        sha256: a78f3bff4e5e69274a032b40ab6a0acd55d086e3d47720e21967befd1716ae6b
+        url: https://codeberg.org/MaerchenfeeimGarten/AntiBillard/raw/commit/f99ff15cbb972083f8605c9a7dc3577276261883/page.codeberg.maerchenfeeimgarten.AntiBillard.desktop
+        sha256: b74533e03ffb6b28dfc01b209d869f9994c3e77737f5d5128fd8fa4b1eff9d4e
       - type: file
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/45a50760cc947c97a27cf75e63feff36423b4b31/src/pfeiltng/Pfeilspiel_TNG.svg
-        sha256: 463e70c71eab51ff7f53f619d21f1fce494068528156cf0afdde3efc729a48d7
+        url: https://codeberg.org/MaerchenfeeimGarten/AntiBillard/raw/commit/f99ff15cbb972083f8605c9a7dc3577276261883/Images/Splash_Square.svg
+        sha256: eb14f20c61914ec5831c8400880b24e29f2d2237d944e2ce2126c81086c1ae1a
       - type: file
-        url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/a54b73708c69fc2c59cd0755d7f44878ad630273/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
-        sha256: a8ee7c53b9ce4bd6f618ae398ea7c9146edcbb67d71c6df0353370f17c76c434
+        url: https://codeberg.org/MaerchenfeeimGarten/AntiBillard/raw/commit/6163b1095875a8d65658491ce926833607d6100d/page.codeberg.maerchenfeeimgarten.AntiBillard.metainfo.xml
+        sha256: be37ae4eb1fe92bfea53959906681be2e1abe6a972e6bd02c86c5c28e98f04ab
