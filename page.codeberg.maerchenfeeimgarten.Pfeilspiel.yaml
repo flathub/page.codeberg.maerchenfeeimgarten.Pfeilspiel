@@ -1,8 +1,8 @@
 id: page.codeberg.maerchenfeeimgarten.Pfeilspiel
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
-command: "Pfeilspiel_TNG_international"
+command: Pfeilspiel_TNG_international
 finish-args:
   - --share=ipc
   - --socket=x11
@@ -11,10 +11,10 @@ modules:
   - name: Pfeilspiel_TNG_international
     buildsystem: simple
     build-commands:
-      - install -D  Pfeilspiel_TNG_international /app/bin/Pfeilspiel_TNG_international
-      - install -Dm 0644 page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop /app/share/applications//page.codeberg.maerchenfeeimgarten.Pfeilspiel.desktop
-      - install -Dm 0644 Pfeilspiel_TNG.svg /app/share/icons/hicolor/scalable/apps/page.codeberg.maerchenfeeimgarten.Pfeilspiel.svg
-      - install -Dm 0644 page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml /app/share/metainfo/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
+      - install -D  Pfeilspiel_TNG_international -t /app/bin/
+      - install -Dm 0644 ${FLATPAK_ID}.desktop -t /app/share/applications/
+      - install -Dm 0644 ${FLATPAK_ID}.svg -t /app/share/icons/hicolor/scalable/apps/
+      - install -Dm 0644 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
     sources:
       - type: file
         sha256: 09806476debbfee87b14230c286fb8790cf8767d6a715a10e5e1f0f951ce55e9
@@ -26,6 +26,7 @@ modules:
       - type: file
         url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/45a50760cc947c97a27cf75e63feff36423b4b31/src/pfeiltng/Pfeilspiel_TNG.svg
         sha256: 463e70c71eab51ff7f53f619d21f1fce494068528156cf0afdde3efc729a48d7
+        dest-filename: page.codeberg.maerchenfeeimgarten.Pfeilspiel.svg
       - type: file
         url: https://codeberg.org/MaerchenfeeimGarten/Pfeilspiel/raw/commit/a54b73708c69fc2c59cd0755d7f44878ad630273/src/pfeiltng/page.codeberg.maerchenfeeimgarten.Pfeilspiel.metainfo.xml
         sha256: a8ee7c53b9ce4bd6f618ae398ea7c9146edcbb67d71c6df0353370f17c76c434
